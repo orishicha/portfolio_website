@@ -376,3 +376,7 @@ opacity: 0.6;
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
+.social-media a {
+  text-decoration: none;
+}
