@@ -355,6 +355,10 @@ table.cell_style td:hover {
   }
 }
 
+section {
+  text-align: center;
+}
+
 @media all and (max-width: 500px) {
   .work {
     -ms-grid-columns: 1fr;

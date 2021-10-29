@@ -41,67 +41,73 @@
   </header>
 
   <main>
-    <h1>Contact me</h1>
-      <ul>
-        <li>Phone
-          <ul>
-            <li><a href="tel:+491734203601">+491734203601</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li id="email">Email
-          <ul>
-            <li><a href="mailto:zelenovanastasiia@gmail.com">zelenovanastasiia@gmail.com</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul>
-        <li>Skype
-          <ul>
-            <li><a href="skype:orish-sh-sh">orish-sh-sh</a></li>
-          </ul>
-        </li>
+    <section>
+      <h1>Contact me</h1>
+        <ul>
+          <li>Phone
+            <ul>
+              <li><a href="tel:+491734203601">+491734203601</a></li>
+            </ul>
+          </li>
         </ul>
-      <ul>
-        <li>LinkedIn
-          <ul>
-            <li><a href="https://www.linkedin.com/in/anastasiia-zelenova/">Anastasiia Zelenova</a></li>
+        <ul>
+          <li id="email">Email
+            <ul>
+              <li><a href="mailto:zelenovanastasiia@gmail.com">zelenovanastasiia@gmail.com</a></li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>Skype
+            <ul>
+              <li><a href="skype:orish-sh-sh">orish-sh-sh</a></li>
+            </ul>
+          </li>
           </ul>
-        </li>
-      </ul>
+        <ul>
+          <li>LinkedIn
+            <ul>
+              <li><a href="https://www.linkedin.com/in/anastasiia-zelenova/">Anastasiia Zelenova</a></li>
+            </ul>
+          </li>
+        </ul>
+    </section>
   </main>
 
 <h2>Hello stranger!</h2>
-<h3>Please intorduce yourself</h3>
 
-<form id="contact-form">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="contact-email">Email:</label><br>
-  <input type="text" id="contact-email" name="contact-email" required><br>
-  <label for="message">Message:</label>
-  <p class="message">Your message must contain 20 to 240 characters.</p>
-  <textarea id="message" name="message" minlength="20" maxlength="240" required></textarea><br>
-  <button onclick="alert('See ya!')">Send</button>
-  <br>
-</form>
-<form id="tip">
-  <h3>You can tip me</h3>
-  <label for="cardholder-name">Cardholder</label><br>
-  <input type="text" id="cardholder-name" name="cardholder-name"><br>
-  <label for="card-number">Card Number</label><br>
-  <input type="number" id="card-number" name="card-number" pattern="\d{4}[\-]\d{4}[\-]\d{4}[\-]\d{4}"><br>
-  <label for="expiration-date">Expiration date</label><br>
-  <input type="number" id="expiration-date" name="expiration-date" pattern="d{2}/d{2}"><br>
-  <label for="cvv">CVV</label><br>
-  <input type="number" id="cvv" name="cvv" pattern="d{3}"><br>
-  <label for="amount">Amount</label>
-  <p class="message">I'm just learning to do contact forms, so the size of the tip can be a 3-digit number. I'm working on the issue.</p>
-  <input type="number" id="amount" name="amount" pattern="d{3}"><br>
-  <br>
-  <button onclick="alert('Thank you!')">Send tip</button><br><br>
-</form>
+<section>
+  <form id="contact-form">
+    <h3>Please intorduce yourself</h3>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="contact-email">Email:</label><br>
+    <input type="text" id="contact-email" name="contact-email" required><br>
+    <label for="message">Message:</label>
+    <p class="message">Your message must contain 20 to 240 characters.</p>
+    <textarea id="message" name="message" minlength="20" maxlength="240" required></textarea><br>
+    <button onclick="alert('See ya!')">Send</button>
+    <br>
+  </form>
+</section>
+<section>
+  <form id="tip">
+    <h3>You can tip me</h3>
+    <label for="cardholder-name">Cardholder</label><br>
+    <input type="text" id="cardholder-name" name="cardholder-name"><br>
+    <label for="card-number">Card Number</label><br>
+    <input type="number" id="card-number" name="card-number" pattern="\d{4}[\-]\d{4}[\-]\d{4}[\-]\d{4}"><br>
+    <label for="expiration-date">Expiration date</label><br>
+    <input type="number" id="expiration-date" name="expiration-date" pattern="d{2}/d{2}"><br>
+    <label for="cvv">CVV</label><br>
+    <input type="number" id="cvv" name="cvv" pattern="d{3}"><br>
+    <label for="amount">Amount</label>
+    <p class="message">I'm just learning to do contact forms, so the size of the tip can be a 3-digit number. I'm working on the issue.</p>
+    <input type="number" id="amount" name="amount" pattern="d{3}"><br>
+    <br>
+    <button onclick="alert('Thank you!')">Send tip</button><br><br>
+  </form>
+</section>
 
 <!-- Footer with links to social media profiles -->
 <footer class="page-footer">
