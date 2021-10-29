@@ -104,13 +104,11 @@ a:visited {
   color: var(--visited-link-color);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: var(--link-color);
-  /* no underlining when hovering over a link */
   text-decoration: underline dotted;
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 70% */
   opacity: 0.7;
 }
 
@@ -127,20 +125,15 @@ a.navigation-list__item--active {
 
 button,
 .button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   display: inline-block;
   font-size: var(--main-font-size);
   font-weight: 600;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-color);
   color: var(--input-color);
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 1rem;
   border-radius: 0.3rem;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
   transition: 0.2s opacity;
 }
@@ -149,9 +142,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
@@ -199,7 +190,8 @@ button.results {
   margin-left: 1.5rem;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: var(--input-color);
   opacity: 0.75;
 }
@@ -240,7 +232,8 @@ thead th:nth-child(4) {
   width: 25%;
 }
 
-th, td {
+th,
+td {
   padding: var(--padding);
 }
 
@@ -250,8 +243,8 @@ table.cell_style td {
 
 table.cell_style td:hover {
   background-color: var(--primary-color);
-cursor: pointer;
-opacity: 0.6;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 .findme {
@@ -283,7 +276,6 @@ opacity: 0.6;
   display: inline-block;
   width: 33%;
 }
-/* end grid fallback */
 
 @supports (display: grid) {
   .work {
@@ -303,6 +295,7 @@ opacity: 0.6;
 
 section {
   text-align: center;
+  margin: 5rem auto;
 }
 
 @media all and (max-width: 500px) {
@@ -321,6 +314,7 @@ section {
   .work {
     grid-gap: 1rem;
   }
+
   .work__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -343,9 +337,11 @@ section {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -359,6 +355,7 @@ section {
   from {
     transform: translate(0, 50px);
   }
+
   to {
     transform: translate(200px, 50px);
   }
@@ -372,6 +369,7 @@ section {
   from {
     transform: translate(450px, 50px);
   }
+
   to {
     transform: translate(100px, 50px);
   }

@@ -102,23 +102,17 @@ a:visited {
 
 a:hover {
   color: #854442;
-  /* no underlining when hovering over a link */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 70% */
   opacity: 0.7;
 }
 
 a:focus {
   color: #854442;
-  /* no underlining when hovering over a link */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 70% */
   opacity: 0.7;
 }
 
@@ -134,20 +128,15 @@ a.navigation-list__item--active {
 }
 
 button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #be9b7b;
   color: #f4f2ed;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 1rem;
   border-radius: 0.3rem;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
@@ -155,20 +144,15 @@ button {
 }
 
 .button {
-  /* overwrites browser defaults and resets the border */
   border: none;
-  /* takes the font from the outer container */
   display: inline-block;
   font-size: 1.6rem;
   font-weight: 600;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #be9b7b;
   color: #f4f2ed;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 1rem;
   border-radius: 0.3rem;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
@@ -179,9 +163,7 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
@@ -335,7 +317,6 @@ table.cell_style td:hover {
   display: inline-block;
   width: 33%;
 }
-/* end grid fallback */
 
 @supports (display: grid) {
   .work {
@@ -357,6 +338,7 @@ table.cell_style td:hover {
 
 section {
   text-align: center;
+  margin: 5rem auto;
 }
 
 @media all and (max-width: 500px) {
@@ -377,6 +359,7 @@ section {
   .work {
     grid-gap: 1rem;
   }
+
   .work__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
@@ -399,9 +382,11 @@ section {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -411,9 +396,11 @@ section {
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;
   }
+
   100% {
     fill: #f76414;
   }
@@ -429,6 +416,7 @@ section {
     -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
@@ -440,6 +428,7 @@ section {
     -webkit-transform: translate(0, 50px);
     transform: translate(0, 50px);
   }
+
   to {
     -webkit-transform: translate(200px, 50px);
     transform: translate(200px, 50px);
@@ -456,6 +445,7 @@ section {
     -webkit-transform: translate(450px, 50px);
     transform: translate(450px, 50px);
   }
+
   to {
     -webkit-transform: translate(100px, 50px);
     transform: translate(100px, 50px);
@@ -467,6 +457,7 @@ section {
     -webkit-transform: translate(450px, 50px);
     transform: translate(450px, 50px);
   }
+
   to {
     -webkit-transform: translate(100px, 50px);
     transform: translate(100px, 50px);
