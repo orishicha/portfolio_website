@@ -117,7 +117,6 @@ a:focus {
 }
 
 a.navigation-list__item--active {
-  /* selected link */
   color: #8b008b;
   text-decoration: none;
 }
@@ -125,6 +124,10 @@ a.navigation-list__item--active {
 .navigation-list__item {
   color: #fab601;
   text-decoration: underline;
+}
+
+.rules {
+  text-align: center;
 }
 
 button {
@@ -136,6 +139,7 @@ button {
   color: #f4f2ed;
   text-decoration: none;
   padding: 1rem;
+  margin: 1rem auto;
   border-radius: 0.3rem;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
@@ -152,11 +156,24 @@ button {
   color: #f4f2ed;
   text-decoration: none;
   padding: 1rem;
+  margin: 1rem auto;
   border-radius: 0.3rem;
   border-bottom: 0.2rem solid rgba(0, 0, 0, 0.5);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
   transition: 0.2s opacity;
+}
+
+.results {
+  display: block;
+}
+
+textarea {
+  margin: 1rem auto;
+}
+
+input {
+  margin: 1rem auto;
 }
 
 button:hover,
@@ -165,10 +182,6 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.8;
-}
-
-button.results {
-  margin: 0.5rem;
 }
 
 .page-header {
@@ -220,18 +233,28 @@ button.results {
 input {
   background-color: #f4f2ed;
   opacity: 0.75;
+  display: block;
 }
 
 textarea {
   background-color: #f4f2ed;
   opacity: 0.75;
+  display: block;
 }
 
-.message {
+label {
+  display: block;
+}
+
+.hint {
   padding: 0;
   margin: 0;
   opacity: 70%;
   font-size: 1.4rem;
+}
+
+#message {
+
 }
 
 caption {
